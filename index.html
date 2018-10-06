@@ -1,50 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-        <title>Hangman</title>
-        
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"crossorigin="anonymous">
+    <link rel= "stylesheet" href="./assets/css/style.css">
+    
+<style>
+    
+    .jumbotron{
+        background-image:url(./assets/images/football-hit.jpg);
+    }
+      
+</style>
+</head>
 <body>
-<div class ="Game-Layout">
-    <div class="Game-Title">
+    <div class="jumbotron jumbotron-fluid">
+                <div class="container py-5">
+                  <div class = "row">
+                    <div class = "col-md-12" id= "header">
+                        <h1>Hangman: NFL Teams Edition</h1>
+                    <button type="button" id="new-game-button" >Kick</button>
 
-        <h1>Word Choice Game: NFL Football Teams</h1>
-    </div>
-    <div class="Game-Instructions">
-        <h2>Press Any Button To Begin. Input your guesses on the keyboard for each word. You will have nine chances to get the correct word. If you go over the 9 guesses, YOU WILL LOSE!</h2>
-    </div>
-    <div class ="User-Input">
-            <pre><p>| <span class="alert-line"></span> |</p></pre>
-            <pre><p>| <span class="alert-line"></span> |</p></pre>
-            <pre><p>| <span class="alert-line"></span> |</p></pre>
-            <pre><p>| <span class="alert-line"></span> |</p></pre>
-            <pre><p>| <span class="alert-line"></span> |</p></pre>
-            <pre><p>+---------------------------------------------+</p></pre>
+                    </div>
 
-    </div>
-    <div id="game-div" class="panel">
-            <div id="word-display">
-                <p id="word-display-letters"></p>
+                    
+                    </div>
+
+                  
+                  </div>
+                </div>
+     </div>
+    <div class= "container-fluid">
+        <div class="row">
+            <div class="col 12 text-center py-5" id= "placeholder-section">
+                <div class ="container">
+                    <div class ="row">
+                        <div class ="col-md-6 my-3">
+                            <h2>Press any key to begin!</h2>
+                             <br>
+                            <span id ="placeholders"></span>
+
+                        </div>
+                        <div class ="col-md-6 my-3">
+                            <h2>Incorrect Letters Guessed:</h2>
+                            <br>
+                            <span id = "guessed-letters"></span>
+                        </div>
+                <div class ="container">
+                    <div class="row">
+                        <div class="col-md-4 py-5">
+                            <h3>Guesses Left: <span id= "guesses-left"> </span></h3>
+                            </div>
+                        <div class="col-md-4 py-5">
+                             <h3>Wins: <span id="win-count"> 0 </span></h3>
+                             </div>
+                             <div class="col-md-4 py-5">
+                            <h3>Losses: <span id= "loss-count"> 0 </span></h3>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>          
+                        
+
+                 </div>
+                    </div>
+
             </div>
-
-            <div id="general-display">
-                <pre><p>+----Guessed-Letters----------------------------------+</p></pre>
-                <pre><p>| <span id="guessed-letters">                                                   </span> |</p></pre>
-                <pre><p>+----Stats--------------------------------------------+</p></pre>
-                <pre><p>| Incorrect Letters: <span id="error-count"></span> |</p></pre>
-                <pre><p>| Wins: <span id="win-count"></span> |</p></pre>
-                <pre><p>| Losses: <span id="loss-count"></span> |</p></pre>
-                <pre><p>+-----------------------------------------------------+</p></pre>
-            </div>
-</div>
+        </div>
+    
+    </div>
 
 
 
 
 
-
-
-
-
-    </body>
+    <script src="./assets/javascript/game.js"></script>
+</body>

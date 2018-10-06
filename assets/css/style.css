@@ -1,0 +1,23 @@
+body{
+    color:white;
+    background-color:purple;
+}
+.jumbotron{
+    background-image:url(./assets/images/football-hit.jpg);
+    background-color: azure;
+    background-blend-mode: multiply;
+    background-size:contain;
+    opacity:0.9;
+ }
+ h1{
+     font-size: 72px;
+}
+#placeholder-section{
+    background-color:gold;
+    color: black;
+}
+
+#placeholders{
+    letter-spacing: 6px;
+    font-size: 42px;
+}
