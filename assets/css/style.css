@@ -3,7 +3,8 @@ body{
     background-color:purple;
 }
 .jumbotron{
-    background-image:url(./assets/images/football-hit.jpg);
+    background-image:url("./assets/images/football-hit.jpg");
+    background-size: cover;
     background-color: azure;
     background-blend-mode: multiply;
     background-size:contain;
