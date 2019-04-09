@@ -107,6 +107,8 @@ function checkLoss (){
         gameRunning = false; 
         losses.textContent = losses;
         placeholders.textContent = pickedWord;
+        pickedWordPlaceholderArr.empty();
+        alert("Better Luck Next Time!");
     }
     checkWin();
 }
@@ -116,7 +118,10 @@ function checkWin(){
         wins++;
         gameRunning = false;
         wins.textContent = wins; 
+        pickedWordPlaceholderArr.empty();
+        alert("You Win the Game!");
     }
+    
 }
 
 // add event listener for new game button
