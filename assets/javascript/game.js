@@ -80,7 +80,7 @@ function letterGuess(letter) {
     }
     else {
         if (!gameRunning) {
-            alert("The Game Isn't Running, Click on the Kick Button");
+            alert("The Game Isn't Running, Click on the Kick It Off Button");
         } else {
             alert("You've Already Guessed this letter");
         }
@@ -93,9 +93,11 @@ function letterGuess(letter) {
 function checkIncorrect(letter){
     if(pickedWordPlaceholderArr.indexOf(letter.toLowerCase()) === -1 && pickedWordPlaceholderArr.indexOf(letter.toUpperCase()) === -1){
         
+        guessesLeft--;
         incorrectLetterBank.push(letter);
-        guessedLetters.textContent = incorrectLetterBank.join(' ');
-        guessesLeft.textContent = guessesLeft--;
+        guessedLetters.textContent =incorrectLetterBank;
+        incorrectLetterBank.join(' ');
+        guessesLeft.textContent = guessesLeft;
     }
     checkLoss();
 }
@@ -108,7 +110,8 @@ function checkLoss (){
         gameRunning = false; 
         losses.textContent = losses;
         placeholders.textContent = pickedWord;
-        alert("Better Luck Next Time!");
+        alert("Better Luck Next Time! Reload the page and Click the Kick It Off Button to Play Again!");
+        
     }
     checkWin();
 }
@@ -119,9 +122,9 @@ function checkWin(){
         wins++;
         gameRunning = false;
         wins.textContent = wins;
-        alert("You Win the Game!");
+        alert("You Win the Game! Reload the page and click the Kick It Off Button to Play Again!");
+        
     }
-    
 }
 
 // add event listener for new game button
