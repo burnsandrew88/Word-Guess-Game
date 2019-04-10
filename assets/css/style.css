@@ -1,6 +1,7 @@
 body{
     color:white;
     background-color:purple;
+    font-family: 'Coda Caption', sans-serif;
 }
 .jumbotron{
     background-image:url("./assets/images/football-hit.jpg");
@@ -11,6 +12,13 @@ body{
  }
  h1{
      font-size: 72px;
+     font-family: 'Coda Caption', sans-serif;
+}
+h2{
+    font-family: 'Coda Caption', sans-serif;
+}
+h3 {
+    font-family: 'Coda Caption', sans-serif;
 }
 #placeholder-section{
     background-color:gold;
